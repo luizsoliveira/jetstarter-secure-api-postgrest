@@ -1,6 +1,13 @@
-# Rapid REST API development with PostgREST
+# Rapid REST API development, including Authentication and Authorization through PostgREST
 
-This repository provides a functional template and a tutorial that allows you to build a REST API ecosystem in just 1 minute. 
+This repository provides a functional template and a tutorial that allows you to build a secure REST API ecosystem with authentication and authorization in just 1 minute.
+
+This API PostgREST template is available in two versions:
+
+* Simple version with support only to **public** endpoints ([template link](https://github.com/luizsoliveira/jetstarter-secure-api-postgrest))
+* Secure version with support for public and **authenticated** endpoints ([template link](https://github.com/luizsoliveira/jetstarter-secure-api-postgrest))
+
+The simple version is recommended for educational projects where it can be a very fast and straightforward approach. The second option is slightly more sophisticated, including a simple authentication and authorization schema that can be enough for the initial requirements of the most common web applications. 
 
 ![](https://github.com/luizsoliveira/jetstarter-api-postgrest/raw/main/doc/images/API-ecosystem-Postgrest-OverviewArchitecture.png "")
 
