@@ -42,19 +42,8 @@ CREATE TABLE "secure"."tasks" (
 CREATE TABLE "secure"."task_types" (
   "id" serial PRIMARY KEY,
   "title" varchar NOT NULL,
-  "slug" varchar NOT NULL,
   "created_at" TIMESTAMP DEFAULT NOW()
 );
-
-CREATE TABLE IF NOT EXISTS secure.task_types
-(
-    id integer NOT NULL DEFAULT nextval('task_types_id_seq'::regclass),
-    title character varying COLLATE pg_catalog."default",
-    created_at timestamp without time zone DEFAULT now(),
-    slug text COLLATE pg_catalog."default" NOT NULL,
-    CONSTRAINT task_types_pkey PRIMARY KEY (id)
-);
-
 
 COMMENT ON COLUMN "secure"."projects"."description" IS 'Description of the project';
 
