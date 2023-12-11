@@ -28,9 +28,9 @@ In this documentation, we'll see how to build a REST API with CRUD operations fo
  Before running the codes below, ensure you already have Docker installed and started on your computer. [Click here](https://docs.docker.com/get-docker/) for instructions on how to install Docker.
 
 ```shell
-git clone https://github.com/luizsoliveira/jetstarter-api-postgrest
+git clone https://github.com/luizsoliveira/jetstarter-secure-api-postgrest
 
-cd jetstarter-api-postgrest
+cd jetstarter-secure-api-postgrest
 
 docker-compose up
 
@@ -53,7 +53,7 @@ PS.: Links are available only locally and after starting the containers.
 
 ## Why use PostgREST?
 
-Regarding systems development, a subject that always arouses my interest is code reuse and automatic code generation. There is a fair amount of boilerplate code, especially at the project's beginning, that can be easily generated automatically using special tools.
+Regarding systems development, a subject that has always aroused my interest is code reuse and automatic code generation. There is a fair amount of boilerplate code, especially at the project's beginning, that can be easily generated automatically using special tools.
 
 An excellent example of applying this technique can be the rapid development of a REST API, a demand common to almost all projects. In this article, we will talk about PostgREST.
 
