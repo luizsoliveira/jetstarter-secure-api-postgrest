@@ -1,4 +1,11 @@
--- watch CREATE and ALTER
+-- Uncomment and change the line below if you want
+-- to define a specific TIMEZONE for the database.
+-- ALTER DATABASE app_db
+-- SET TIMEZONE TO 'America/Vancouver';
+
+-- These triggers watch for CREATE and ALTER sentences and reload
+-- automatically the PostgREST schema cache keeping the REST endpoints
+-- always updated.
 CREATE OR REPLACE FUNCTION pgrst_ddl_watch() RETURNS event_trigger AS $$
 DECLARE
   cmd record;
